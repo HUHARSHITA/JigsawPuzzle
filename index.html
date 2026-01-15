@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Sliding Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Sliding Puzzle</h1>
+    </div>
+
+    <div class="stats-container">
+        <div class="stat-item">Moves: <span id="move-count">0</span></div>
+        <div class="stat-item">Time: <span id="timer">00:00</span></div>
+    </div>
+
+    <div id="puzzle-wrapper">
+        <div id="puzzle-board"></div>
+    </div>
+
+    <div class="controls">
+        <button id="shuffle-btn">🔀 Shuffle</button>
+        <button id="restart-btn">🔄 Restart</button>
+        <button id="mute-btn">🔊 Mute</button>
+        <button id="toggle-numbers">🔢 Hide Numbers</button>
+        
+        <label for="image-upload" class="file-input-label">🖼️ Upload Image</label>
+        <input type="file" id="image-upload" accept="image/*">
+        
+        <button class="btn-accent" id="def-1">Default 1</button>
+        <button class="btn-accent" id="def-2">Default 2</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
